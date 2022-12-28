@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./asset/styles/reset.css">
+    <link rel="stylesheet" href="./asset/styles/fonts.css">
+    <link rel="stylesheet" href="./asset/styles/root.css">
+    <link rel="stylesheet" href="./asset/styles/style.css">
+    <script src="index.js"></script>
+    <title>BSTmarket</title>
+</head>
+<body>
+    <!--HEADER-->
+<header class="header">
+    <div class="header__content container">
+        <figure class="header__logo">
+            <a href="#">
+                <img src="./asset/images/logo.png" alt="Brand">
+            </a>
+        </figure>
+        <a href="javascript:void(0);" class="icon menu-button" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <nav id="menus" class="header__navigations">
+            <ul>
+                <li class="header__navigations--active"><a href="#willkommen">willkommen</a></li>
+                <li><a href="#uberus" onclick="closeMenu()">über uns</a></li>
+                <li><a href="#shop" onclick="closeMenu()">spezielles produkt</a></li>
+                <li><a href="#fruit" onclick="closeMenu()">Getrocknete Früchte</a></li>
+                <li><a href="#preis" onclick="closeMenu()">Preis</a></li>
+                <li><a href="https://bstmarket.ch/shop/" onclick="closeMenu()">Shop</a></li>
+<!--                <li><a href="#Kundenbereich" onclick="closeMenu()">Kundenbereich</a></li>-->
+                <li><a href="#kontakt" onclick="closeMenu()">Kontakt</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main style="overflow: hidden">
+    <!--WILLCOMMEN-->
+    <section id="willkommen" class="container first-section">
+        <div class="first-section__content">
+            <h1 class="first-section__title">Willkommen<br>Auf<br>BSTmarket.ch</h1>
+            <span class="first-section__span">Auf dieser seite bieten wir die besten produkte mit höchster qualität und fairen preisen, worauf warten sie noch ?  schau gleich mal rein !</span>
+                <button onclick="myFunction()" class="button button__primary first-section__button">Klick mich</button>
+                <p id="demo"></p>
+        </div>
+        <figure>
+            <img class="truffle" src="./asset/images/trufel.jpg" alt="trüffel">
+        </figure>
+    </section>
+    <!--PRODUKTE-->
+    <section id="produkte" class="container product">
+        <h2 id="product" class="section2__title">Unsere Produkte</h2>
+        <span class="section2__span">Wir haben drei besondere Produkte, die aus unserem Land (Persien) stammen.</span>
+        <div class="cards">
+            <section class="card">
+                <figure>
+                    <img class="card__image" src="./asset/images/safran.jpg" alt="safran">
+                </figure>
+                <div class="card__content">
+                <h3 class="card__title">Safran Klasse A</h3>
+                <p class="card__description">Wir können Safran in höchster Qualität anbieten</p>
+                <button onclick="safranFunction()" class="button button__primary">Safran</button>
+                <p id="safran_demo"></p>
+                </div>
+            </section>
+            <section class="card">
+                <figure>
+                    <img class="card__image" src="./asset/images/tartufo.jpg" alt="tartufo">
+                </figure>
+                <div class="card__content">
+                <h3 class="card__title">Der Trüffel</h3>
+                <p class="card__description">Wir können alle Produkte auf Trüffelbasis anbieten</p>
+                <button onclick="truffelFunction()" class="button button__primary">Trüffel</button>
+                <p id="truffel_demo"></p>
+                </div>
+            </section>
+            <section class="card">
+                <figure>
+                    <img class="card__image" src="./asset/images/berberitzen.jpg" alt="">
+                </figure>
+                <div class="card__content">
+                    <h3 class="card__title">Berberitzen</h3>
+                    <p class="card__description">Wir haben die beste Berberitze der Welt</p>
+                    <button onclick="berberitzenFunction()" class="button button__primary">Berberitzen</button>
+                    <p id="berberitzen_demo"></p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!--ABOUT PRODUKTE-->
+    <section class="container">
+        <span class="seconde__title__span">Safran</span>
+        <h2 class="seconde__description_heding">Was ist safran?</h2>
+        <p class="seconde__paragraf">Der Safran (von arabisch/persisch زعفران, DMG zaʿfarān, ‚das Gelbe‘, ‚Safran‘), wissenschaftlicher Name Crocus sativus, ist eine Krokus-Art, die im Herbst violett blüht. Die Art wird vor allem als Gewürzpflanze genutzt: Aus den Narben ihrer Blüten (den „Griffeln“) wird das ebenfalls Safran genannte Gewürz gewonnen.
+
+            Diese Pflanzenart ist eine triploide Mutante des auf den ägäischen Inseln beheimateten Crocus cartwrightianus.[1] Sie ist wegen des dreifachen Chromosomensatzes unfruchtbar und kann nur vegetativ durch Knollenteilung vermehrt werden. Die Stammform Crocus cartwrightianus besitzt deutlich kürzere, aber ebenfalls aromatische Narben ...</p>
+        <div class="seconde__section__btn">
+            <button onclick="mehrSafranFunction()" class="seconde__section__btn__left button button__primary">MEHR</button>
+            <p id="mehrSafran_demo"></p>
+        </div>
+    </section>
+    <hr class="container second__hr">
+    <section class="container">
+        <span style="color: #a64a2b" class="seconde__title__span">Trüffel</span>
+        <h2 class="seconde__description_heding">Möchten Sie etwas über Trüffel wissen? Lesen Sie alles</h2>
+        <p class="seconde__paragraf">Als Trüffel (der oder die)[1] wird vor allem umgangssprachlich eine Vielzahl knolliger, meist unterirdisch (hypogäisch) wachsender Pilze bezeichnet; darunter befinden sich sowohl „echte“ als auch „falsche“ Trüffel. Im engsten Sinne handelt es sich um die Gattung Tuber, zu der einige der teuersten und kulinarisch wertvollsten Pilze gehören. Markant ist das marmorierte Fleisch im Querschnitt (Gleba). Die Außenhaut (Peridie) hat rindenartige Auswucherungen, deren Form, Farbe und Struktur zur Trüffelbestimmung wichtig sind. Trüffel hatten jahrhundertelang ausschließlich Bedeutung in der ländlichen Küche. Sie finden beinahe nur noch Verwendung in der Haute Cuisine ...</p>
+        <div class="seconde__section__btn">
+            <button onclick="mehrTruffelFunction()" class="seconde__section__btn__left button button__primary btn-trufel-color">MEHR</button>
+            <p id="mehrTruffel_demo"></p>
+        </div>
+    </section>
+    <hr class="container second__hr">
+    <section class="container berbers">
+        <span style="color: #cc696e" class="seconde__title__span">Berberitzen</span>
+        <h2 class="seconde__description_heding">Was ist Berberitzen?</h2>
+        <p class="seconde__paragraf">Die Berberitzen (Berberis) sind eine Pflanzengattung aus der Familie der Berberitzengewächse (Berberidaceae). Bei manchen Autoren werden auch die Arten der Gattung Mahonien (Mahonia) zur Gattung Berberis gezählt. Berberitzen gehören mit 400 bis 600 Arten zu den artenreichsten Gehölzgattungen überhaupt ...</p>
+        <div class="seconde__section__btn">
+            <button onclick="mehrBerberitzenFunction()" class="seconde__section__btn__left button button__primary btn-berberitzen-color">MEHR</button>
+            <p id="mehrBerberitzen_demo"></p>
+        </div>
+    </section>
+    <!--ABOUT US-->
+    <section id="uberus" class="container section_foto__article">
+        <div class="foto">
+            <figure>
+                <img class="img__alone" src="./asset/images/box-tartufo.jpg" alt="safran">
+            </figure>
+            <figure class="zafran_figure">
+                <img class="img__alone__right" src="./asset/images/shishe-safran%20(1).jpg" alt="safran">
+            </figure>
+            <figure class="berberitze_figure">
+                <img class="img__alone__left" src="./asset/images/box-berberitzen%20(1).jpg" alt="berberitzen">
+            </figure>
+        </div>
+        <div class="section__three">
+            <h2 class="section__three__title">Wer wir sind und was wir bei BSTmarket.ch machen?!</h2>
+            <p class="section__three__paragraf">Wir sind eine iranische Gruppe, die eine Firma in Bern hat . . .</p>
+            <p class="section__three__paragraf__two">Ja, wir sind eine iranische Gruppe, die den besten Safran, Trüffel und Berberitzen aus dem Iran mit maximaler Qualität und fairen Kosten anbietet. Wir versenden alle Produkte in allen Mengen von Ihrer Adresse mit maximaler Qualitätsgarantie. . ., wir sind immer erreichbar, wir freuen uns auf Ihre Kontaktaufnahme</p>
+            <span class="section__three_span">2022 BSTmarket.ch</span>
+        </div>
+    </section>
+    <!--PREIS-->
+    <section id="preis" class="container product">
+        <h2 class="section2__title">Preis</h2>
+    <table class="price-table-desktop">
+        <thead>
+        <tr>
+            <th>Produktname</th>
+            <th>Gewicht</th>
+            <th>Preis</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><strong>Sommer Trüffel Frisch</strong></td>
+            <td> gr</td>
+            <td>Tages Price CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Herbs Trüffel Frisch</strong></td>
+            <td>1 gr</td>
+            <td>Tages Price 600 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Getrocknet Trüffel</strong></td>
+            <td>1 gr</td>
+            <td>Tages Price 1000 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Pulver Trüffel</strong></td>
+            <td>1 gr</td>
+            <td>Tages Price 1000 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran</strong></td>
+            <td>1 gr</td>
+            <td>9 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran Pulver</strong></td>
+            <td>1 gr</td>
+            <td>9 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran Box L </strong></td>
+            <td>4 gr</td>
+            <td>49.90 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran Box M</strong></td>
+            <td>2 gr</td>
+            <td>22 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran Box S </strong></td>
+            <td>1 gr</td>
+            <td>15 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Safran Box </strong></td>
+            <td>1 gr</td>
+            <td>10 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Mörser L</strong></td>
+            <td>1 st </td>
+            <td>7.90 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Mörser S</strong></td>
+            <td>1 st </td>
+            <td>5.90 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Berberitzen</strong></td>
+            <td>10 gr </td>
+            <td>1 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Berberitzen</strong></td>
+            <td>25 gr </td>
+            <td>1.5 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Berberitzen</strong></td>
+            <td>50 gr</td>
+            <td>2 CHF</td>
+        </tr>
+        <tr>
+            <td><strong>Berberitzen</strong></td>
+            <td>500 gr</td>
+            <td>10 CHF</td>
+        </tr>
+        </tbody>
+    </table>
+        <!--PREIS TABLET MOBILE-->
+        <table class="price-table-mobile">
+            <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Sommer Trüffel Frisch</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong> kg</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>Tages Price CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Herbs Trüffel Frisch</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 kg</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>Tages Price 600 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Getrocknet Trüffel</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 kg</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>Tages Price 1000 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Pulver Trüffel</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 kg</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>Tages Price 1000 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>9 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran Pulver</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>9 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran Box L</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>4 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>49.90 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran Box M</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>2 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>22 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran Box S</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>15 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Safran Box</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>10 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Mörser L</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 st</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>7.90 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Mörser S</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>1 st</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>5.90 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Berberitzen</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>10 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>1 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Berberitzen</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>25 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>1.50 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Berberitzen</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>50 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>2 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <span>Produktname</span>
+                        <strong>Berberitzen</strong>
+                    </div>
+                    <div>
+                        <span>Gewicht</span>
+                        <strong>500 gr</strong>
+                    </div>
+                    <div>
+                        <span>Preis</span>
+                        <strong>10 CHF</strong>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+    <h2 id="shop" class="section2__title__shop">Spezielles Produkt</h2>
+    <!-- IMAGES and INFO -->
+    <section class="infocard">
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/IMG_0699.png" alt="sommer">
+            <div class="con-text">
+                <h2>
+                    Sommer Trüffel Frisch &nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span>Tages Price CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/Herbsttrueffel-Burgundertrueffel.jpg" alt="herbs">
+            <div class="con-text">
+                <h2>
+                    Herbs Trüffel Frisch &nbsp&nbsp&nbsp <br> <span>1 kg</span> &nbsp&nbsp&nbsp <br> <span>Tages Price 600 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/box-tartufo.jpg" alt="geronckt">
+            <div class="con-text">
+                <h2>
+                    Getrocknet Trüffel &nbsp&nbsp&nbsp <br> <span>1 kg</span> &nbsp&nbsp&nbsp <br> <span>Tages Price 1000 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/313_0.jpeg" alt="pulver">
+            <div class="con-text">
+                <h2>
+                    Pulver Trüffel &nbsp&nbsp&nbsp <br> <span>1 kg</span> &nbsp&nbsp&nbsp <br> <span>Tages Price 1000 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/1g.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran &nbsp&nbsp&nbsp <br> <span>1 gr</span> &nbsp&nbsp&nbsp <br> <span>9 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                    <button>
+                        Go to product
+                    </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/IMG_1027.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran Pulver &nbsp&nbsp&nbsp <br> <span>1 gr</span> &nbsp&nbsp&nbsp <br> <span>9 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/IMG_1033.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran Box L &nbsp&nbsp&nbsp <br> <span>4 gr</span> &nbsp&nbsp&nbsp <br> <span>49.90 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/m.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran Box M &nbsp&nbsp&nbsp <br> <span>2 gr</span> &nbsp&nbsp&nbsp <br> <span>22 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/s.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran Box S &nbsp&nbsp&nbsp <br><span>1 gr</span> &nbsp&nbsp&nbsp <br><span>15 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/IMG_1035.png" alt="safran">
+            <div class="con-text">
+                <h2>
+                    Safran Box &nbsp&nbsp&nbsp <br><span>1 gr</span> &nbsp&nbsp&nbsp <br><span>10 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/IMG_1022.png" alt="morzer">
+            <div class="con-text">
+                <h2>
+                    Mörser L &nbsp&nbsp&nbsp <br> <span>1 st</span> &nbsp&nbsp&nbsp <br> <span>7.90 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/IMG_1026.png" alt="morzer">
+            <div class="con-text">
+                <h2>
+                    Mörser S &nbsp&nbsp&nbsp <br> <span>1 st</span> &nbsp&nbsp&nbsp <br> <span>5.90 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/10.png" alt="berberitzen">
+            <div class="con-text">
+                <h2>
+                    Berberitzen &nbsp&nbsp&nbsp <br> <span>10 gr</span> &nbsp&nbsp&nbsp <br> <span>1 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/25.png" alt="berberitzen">
+            <div class="con-text">
+                <h2>
+                    Berberitzen &nbsp&nbsp&nbsp <br> <span>25 gr</span> &nbsp&nbsp&nbsp <br> <span>1.5 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/50.png" alt="berberitzen">
+            <div class="con-text">
+                <h2>
+                    Berberitzen &nbsp&nbsp&nbsp <br> <span>50 gr</span> &nbsp&nbsp&nbsp <br> <span>2 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+                        <img class="infocards-img" src="asset/images/berberitzen.jpg" alt="berberitzen">
+            <div class="con-text">
+                <h2>
+                    Berberitzen &nbsp&nbsp&nbsp <br> <span>500 gr</span> &nbsp&nbsp&nbsp <br> <span>10 CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Getrocknete Frücht-->
+
+    <h2 id="fruit" class="section2__title__shop">Getrocknete Früchte</h2>
+    <section class="infocard">
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/limoo.jpeg" alt="limoo">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/tameshk.jpg" alt="tameshk">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/golabi.png" alt="golabi">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span>CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/moz.png" alt="moz">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/kiwi.jpg" alt="kiwi">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/sib.jpg" alt="sib">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/porterghal.jpg" alt="porteghal">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/nargil.jpg" alt="nargil">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/anbe.jpg" alt="anbe">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br><span> kg</span> &nbsp&nbsp&nbsp <br><span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/tootfarangi.jpg" alt="toot">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br><span> kg</span> &nbsp&nbsp&nbsp <br><span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="card-drop">
+            <ul class="ul-drop">
+                <li>
+                    <i class="bx bx-drink"></i>
+                </li>
+                <li>
+                    <i class="bx bx-film"></i>
+                </li>
+                <li>
+                    <i class="bx bx-store-alt"></i>
+                </li>
+                <li>
+                    <i class="bx bx-map"></i>
+                </li>
+            </ul>
+            <img class="infocards-img" src="asset/images/ananas.jpg" alt="ananas">
+            <div class="con-text">
+                <h2>
+                    COMING SOON &nbsp&nbsp&nbsp <br> <span> kg</span> &nbsp&nbsp&nbsp <br> <span> CHF</span>
+                </h2>
+                <hr>
+                <p>Der Versand ist für dieses Produkt kostenlos
+                    <a href="https://bstmarket.ch/shop/product-category/products/">
+                        <button>
+                            Go to product
+                        </button>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <p class="p-hidden">GRATIS LIEFERUNG Ab 10 gr <br> Für weitere informationen können sie +41 79 966 3595 anrufen, wir sind immer erreichbar.</p>
+
+</main>
+    <!--FOOTER-->
+    <footer id="kontakt" class="footer">
+        <!-- Grid container -->
+        <div class="container footer__wrapper">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn-floating" href="https://www.facebook.com/profile.php?id=100080712584434" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- E-mail -->
+
+                <a class="btn-floating" href="mailto: info@bstmarket.ch" role="button"
+                ><i class="fa-solid fa-envelope"></i></a>
+
+                <!-- Tell -->
+                <a class="btn-floating" href="tel: +41799663595" role="button"
+                ><i class="fa-solid fa-phone"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn-floating" href="https://goo.gl/maps/jSsmYxHJkKFJ25tW6" target="_blank" role="button"
+                ><i class="fa-solid fa-location-dot"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn-floating" href="https://www.instagram.com/bstmarket.ch/" target="_blank" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a href="www.bstmarket.ch" target="_blank">BSTmarket.ch</a>
+        </div>
+    </footer>
+
+
+
+
+    <!--JS-->
+    <script>
+        function openMenu() {
+            const x = document.getElementById("menus");
+            x.style.display = x.style.display === "block" ? "none" : "block";
+        }
+
+        function closeMenu() {
+            if (window.innerWidth > 767) return;
+            const x = document.getElementById("menus");
+            x.style.display = "none";
+        }
+    </script>
+</body>
+</html>
